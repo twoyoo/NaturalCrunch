@@ -1,0 +1,178 @@
+ch.<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natural Crunch</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fef9f3;
+        }
+        .nutritional-panel {
+            background-color: #fef2e2;
+            border-color: #fcd34d;
+        }
+        .section-header {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 2rem;
+            color: #d97706;
+        }
+        .ingredient-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background-color: #fff;
+            padding: 1rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+        .ingredient-icon {
+            font-size: 2.5rem;
+        }
+        .hero {
+            background: linear-gradient(to bottom, #fcd34d, #fef2e2);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header & Hero Section -->
+    <header class="hero text-gray-800 py-12 px-6 md:px-12 flex flex-col items-center rounded-b-3xl shadow-lg">
+        <div class="flex items-center justify-center space-x-4 mb-4">
+            <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight">Natural Crunch</h1>
+        </div>
+        <p class="text-xl italic mt-2 font-semibold text-center max-w-2xl">
+            The delicious cereal that feels like a warm hug and supports your health, so you can live life to the fullest.
+        </p>
+        <nav class="mt-8 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 text-xl font-semibold">
+            <a href="#about" class="text-gray-800 hover:text-orange-600 transition-colors duration-300">About Us</a>
+            <a href="#our-cereal" class="text-gray-800 hover:text-orange-600 transition-colors duration-300">Our Cereal</a>
+            <a href="#healthy" class="text-gray-800 hover:text-orange-600 transition-colors duration-300">Why It's Healthy</a>
+        </nav>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="container mx-auto px-4 py-12 md:px-8 max-w-5xl space-y-20">
+
+        <!-- About Section -->
+        <section id="about" class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
+            <h2 class="section-header text-center">About Natural Crunch</h2>
+            <div class="text-lg leading-relaxed text-gray-700 space-y-4">
+                <p>At Natural Crunch, we believe that breakfast should be simple, nourishing, and filled with joy. We created our cereal with the 65+ community in mind, focusing on a product that is both delicious and supportive of a healthy, active lifestyle. Our core mission is to provide a comforting and trustworthy food that you can enjoy every single day, with the confidence that you're making a great choice for your well-being.</p>
+                <p>
+                    We value tradition and quality, which is why we use only the best natural ingredients. Our vision is to become a beloved brand, a staple in kitchens that are recognized for our commitment to simple, wholesome food that contributes to overall health and independence.
+                </p>
+            </div>
+        </section>
+
+        <!-- Our Cereal Section -->
+        <section id="our-cereal" class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
+            <h2 class="section-header text-center text-red-600">Our Delicious Cereal</h2>
+            <div class="text-lg leading-relaxed text-gray-600 space-y-6 md:space-y-0 md:grid md:grid-cols-2 md:gap-8 items-center">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-700">The Perfect Crunch</h3>
+                    <p>
+                        Natural Crunch is a satisfying blend of wholesome, whole-grain oats, lightly sweetened with a touch of golden honey. The perfect, simple base for a truly comforting bowl of cereal. We've then added a generous mix of freeze-dried berries to provide a delightful, vibrant burst of flavor and color.
+                    </p>
+                    <h3 class="text-2xl font-bold mt-6 mb-4 text-gray-700">Natural Ingredients</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="ingredient-item">
+                            <span class="ingredient-icon">🌾</span>
+                            <span class="font-semibold">Whole-Grain Oats</span>
+                        </div>
+                        <div class="ingredient-item">
+                            <span class="ingredient-icon">🍯</span>
+                            <span class="font-semibold">Golden Honey</span>
+                        </div>
+                        <div class="ingredient-item">
+                            <span class="ingredient-icon">🍓</span>
+                            <span class="font-semibold">Freeze-Dried Strawberries</span>
+                        </div>
+                        <div class="ingredient-item">
+                            <span class="ingredient-icon">🫐</span>
+                            <span class="font-semibold">Freeze-Dried Blueberries</span>
+                        </div>
+                        <div class="ingredient-item">
+                            <span class="ingredient-icon">🍇</span>
+                            <span class="font-semibold">Freeze-Dried Raspberries</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 md:mt-0 flex flex-col items-center">
+                    <span class="text-9xl">🥣</span>
+                    <p class="mt-4 text-center font-bold text-2xl text-orange-600">A Delicious Bowl Awaits!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why It's Healthy Section -->
+        <section id="healthy" class="bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
+            <h2 class="section-header text-center text-green-600">Why It's Healthy</h2>
+            <div class="grid md:grid-cols-2 gap-8 items-start">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-700">Health Benefits You Can Count On</h3>
+                    <div class="text-lg leading-relaxed text-gray-600 space-y-4">
+                        <p>We know that good health is a top priority, which is why Natural Crunch is packed with functional benefits that support your well-being.</p>
+                        <ul class="list-disc list-inside space-y-2 pl-4">
+                            <li><span class="font-bold">Heart Health:</span> The whole-grain oats provide a natural source of soluble fiber, which can help support healthy cholesterol levels.</li>
+                            <li><span class="font-bold">Digestive Wellness:</span> High in dietary fiber to promote a healthy and regular digestive system.</li>
+                            <li><span class="font-bold">Natural Sweetness:</span> We use honey as our sole sweetener, so you get a touch of sweetness without any refined or added sugars.</li>
+                            <li><span class="font-bold">Antioxidant Power:</span> The freeze-dried berries are a great source of antioxidants, which help protect your body's cells.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Nutritional Panels Container -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="nutritional-panel p-6 rounded-2xl border-4 border-yellow-500 shadow-md">
+                        <h3 class="text-2xl font-extrabold text-center text-gray-800 mb-4">Nutritional Facts</h3>
+                        <div class="border-b-4 border-gray-800 pb-2 mb-2">
+                            <p class="text-xl font-bold">Serving Size <span class="float-right">50g</span></p>
+                        </div>
+                        <p class="text-sm">Amount Per Serving</p>
+                        <p class="text-4xl font-extrabold my-2">Calories <span class="float-right text-5xl font-extrabold">200</span></p>
+                        <div class="border-t-4 border-gray-800 mt-2 pt-2 space-y-1">
+                            <p class="text-xl font-bold">Total Fat <span class="float-right">2.5g</span></p>
+                            <p class="text-sm font-semibold">Saturated Fat <span class="float-right">0g</span></p>
+                            <p class="text-xl font-bold">Sodium <span class="float-right">17mg</span></p>
+                            <p class="text-xl font-bold">Total Carbohydrate <span class="float-right">40g</span></p>
+                            <p class="text-sm font-semibold">Dietary Fiber <span class="float-right">7g</span></p>
+                            <p class="text-sm font-semibold">Sugars <span class="float-right">10g</span></p>
+                            <p class="text-xl font-extrabold text-orange-600">No Added Sugars <span class="float-right text-sm font-normal">(besides honey)</span></p>
+                            <p class="text-xl font-bold">Protein <span class="float-right">5g</span></p>
+                        </div>
+                    </div>
+                    <div class="nutritional-panel p-6 rounded-2xl border-4 border-yellow-500 shadow-md">
+                        <h3 class="text-2xl font-extrabold text-center text-gray-800 mb-4">Nutritional Facts</h3>
+                        <div class="border-b-4 border-gray-800 pb-2 mb-2">
+                            <p class="text-xl font-bold">Serving Size <span class="float-right">100g</span></p>
+                        </div>
+                        <p class="text-sm">Amount Per Serving</p>
+                        <p class="text-4xl font-extrabold my-2">Calories <span class="float-right text-5xl font-extrabold">400</span></p>
+                        <div class="border-t-4 border-gray-800 mt-2 pt-2 space-y-1">
+                            <p class="text-xl font-bold">Total Fat <span class="float-right">5g</span></p>
+                            <p class="text-sm font-semibold">Saturated Fat <span class="float-right">0g</span></p>
+                            <p class="text-xl font-bold">Sodium <span class="float-right">33mg</span></p>
+                            <p class="text-xl font-bold">Total Carbohydrate <span class="float-right">80g</span></p>
+                            <p class="text-sm font-semibold">Dietary Fiber <span class="float-right">13g</span></p>
+                            <p class="text-sm font-semibold">Sugars <span class="float-right">20g</span></p>
+                            <p class="text-xl font-extrabold text-orange-600">No Added Sugars <span class="float-right text-sm font-normal">(besides honey)</span></p>
+                            <p class="text-xl font-bold">Protein <span class="float-right">10g</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-6 mt-12 rounded-t-xl">
+        <p class="text-sm">&copy; 2025 Natural Crunch. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
